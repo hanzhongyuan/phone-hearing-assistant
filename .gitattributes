@@ -3,4 +3,6 @@
 *.png binary
 *.jar binary
 *.fst binary
-app/src/main/assets/models/** -text
+# Keep downloaded upstream files byte-identical to their SHA256 manifest.
+app/src/main/assets/models/** -text -diff
+app/src/main/assets/models/manifest.json text eol=lf diff
